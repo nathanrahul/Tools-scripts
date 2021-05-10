@@ -1,5 +1,6 @@
 # LIT_AF
 Light Editor in Maya
+
 Created: April 2017
 
 ## Description
