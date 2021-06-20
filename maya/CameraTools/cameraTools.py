@@ -35,7 +35,10 @@ class CameraTools(object):
         cmds.separator()
         self.createCameraControlLayout(mainLayout)
         self.imagePlaneControlLayout(mainLayout)
-        
+    
+    #----------------------------------------#
+    # Camera Control Layout
+    #----------------------------------------#   
     def createCameraControlLayout(self, mainLayout):
         """ Create Camera Attributes Control Layout.
             Args:
@@ -86,7 +89,10 @@ class CameraTools(object):
         )
         cmds.separator()
         cmds.setParent('..')
-    
+   
+    #----------------------------------------#
+    # Image Plane Control Layout
+    #----------------------------------------#
     def imagePlaneControlLayout(self, mainLayout):
         """ Create ImagePlane Attributes Control Layout.
             Args:
@@ -158,9 +164,9 @@ class CameraTools(object):
         """ Show UI.
         """
         cmds.showWindow(self.camWindow)
-
+    
     #====================================================================#
-    # Utils
+    # Utility Functions
     #====================================================================#
     def findShapeSel(self):
         """ Find the shape attributes for the current selected objects.
